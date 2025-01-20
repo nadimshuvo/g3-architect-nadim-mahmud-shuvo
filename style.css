@@ -25,12 +25,18 @@ body {
 }
 
 /* Global Class */
-
 .container {
   max-width: 1440px;
-  margi: 0 auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Global Class */
 
 .brand {
   font-size: 2.8125rem; /* 45px to rem */
@@ -114,7 +120,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .hero {
-  margin-top: 80px;
+    margin-top: 80px;
     flex-direction: column-reverse;
     gap: 25px;
   }
@@ -123,7 +129,6 @@ a:hover {
 .hero-text {
   text-align: center;
 }
-
 
 h1 {
   font-weight: 700;
@@ -167,4 +172,136 @@ h1 {
   color: var(--font-dark-color-2);
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
+}
+
+/* Quick list of Our Features */
+
+section.our-features {
+  padding: 85px 61px 130px;
+}
+
+@media screen and (max-width: 1024px) {
+  section.our-features {
+  padding: 60px 61px 30px;
+}
+}
+
+.feature-row {
+  gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .feature-row {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 342px));
+  gap: 24px;
+}
+
+.feature-text {
+  max-width: 537px;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 2.8125rem; /* 45px to rem */
+  line-height: 3.3125rem; /* 53px to rem */
+  /* Dark 03 */
+  color: var(--font-dark-color-2);
+}
+
+.of-our-span-txt {
+  color: var(--font-dark-color);
+}
+
+.features-span-txt {
+  color: var(--primary-color);
+}
+
+.feature-description {
+  padding: 24px 0 32px;
+  font-weight: 400;
+  font-size: 1rem; /* 16px to rem */
+  line-height: 1.625rem; /* 26px to rem */
+  color: var(--font-dark-color-3);
+}
+
+/* Features you will love & enjoy */
+.experience-row {
+  gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .experience-row {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+}
+.experience-text {
+  max-width: 586px;
+}
+.experience-title {
+  border-left: 5px solid var(--primary-color);
+  padding-left: 21px;
+  font-weight: 700;
+  font-size: 2.8125rem; /* 45px to rem */
+  line-height: 3.3125rem; /* 53px to rem */
+  /* Dark 01 */
+  color: var(--font-dark-color);
+}
+
+.experience-description {
+  padding: 24px 0 30px;
+  font-weight: 400;
+  font-size: 1rem; /* 16px to rem */
+  line-height: 1.625rem; /* 26px to rem */
+  /* Dark 03 */
+  color: var(--font-dark-color-3);
+}
+.cards {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  padding: 30px 43px 30px 30px;
+  background-color: var(--white-color);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.experience-img {
+  position: relative;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -77px;
+  left: -92px;
+  display: inline-block;
+  padding: 45px 42px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+.experience-badge > h3 {
+  font-weight: 700;
+  font-size: 4.0625rem; /* 65px to rem */
+  line-height: 4.375rem; /* 70px to rem */
+  text-align: center;
+  color: var(--white-color);
+}
+
+.experience-badge > p {
+  font-weight: 500;
+  font-size: 1.5625rem; /* 25px to rem */
+  line-height: 2.5rem; /* 40px to rem */
+  text-align: center;
+  color: var(--white-color);
 }
